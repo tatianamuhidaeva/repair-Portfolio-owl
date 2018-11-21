@@ -1,3 +1,15 @@
+@import 'vars'
+@import 'normalize'
+@import 'mixins'
 @import 'fonts'
+@import 'interface'
+
 body
-  font-family: 'Museo Sans Light', sans-serif
+  font-family: 'Museo Sans Medium', sans-serif
+  background-color: #fff
+  color: $text-color
+body .container
+  max-width: 1170px
+  margin: 0 auto
+
+@import 'header'
