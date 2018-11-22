@@ -384,9 +384,17 @@ body {
   color: #333333;
 }
 
-body .container {
+.container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header-wrap {
@@ -430,5 +438,79 @@ body .container {
   font-size: 20px;
   text-decoration: none;
   color: #333333;
+}
+
+.main {
+  background: #f5f5f5;
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+}
+
+.main__title {
+  font-family: 'Museo Sans Bold' , sans-serif;
+  font-size: 41px;
+  line-height: 1.3em;
+  margin-bottom: 53px;
+}
+
+.main__title span {
+  display: block;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.main-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 310px;
+}
+
+.main-advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.main-advantages__img {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  margin-right: 30px;
+}
+
+.main-advantages__img-1 {
+  background-image: url("../img/main/clock-circular-outline.png");
+}
+
+.main-advantages__img-2 {
+  background-image: url("../img/main/calculator.png");
+}
+
+.main-advantages__img-3 {
+  background-image: url("../img/main/paint-board-and-brush.png");
+}
+
+.main-advantages__text {
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 /*# sourceMappingURL=style.css.map */

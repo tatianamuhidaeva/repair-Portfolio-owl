@@ -1,0 +1,42 @@
+.main
+  background: $bg-light-color
+  &-wrap
+    display: flex
+    padding: 80px 0
+  &__title
+    +ff-bold
+    font-size: 41px
+    line-height: 1.3em
+    margin-bottom: 53px
+    span
+      display: block
+      font-size: 20px
+      margin-top: 25px
+  &-advantages
+    display: flex
+    flex-direction: column
+    max-width: 310px
+    &__item
+      display: flex
+      // justify-content: space-between
+      align-items: center
+      margin-bottom: 25px
+    &__img
+      min-width: 36px
+      height: 36px
+      border-radius: 50%
+      border: 2px solid $primary-color
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 20px
+      margin-right: 30px
+      &-1
+        background-image: url('../img/main/clock-circular-outline.png')
+      &-2
+        background-image: url('../img/main/calculator.png')
+      &-3
+        background-image: url('../img/main/paint-board-and-brush.png')
+    &__text
+      +ff-light
+      font-size: 14px
+      line-height: 1.7em
