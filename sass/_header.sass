@@ -14,13 +14,21 @@
     &__city    
       display: block  
       +ff-light
-      font-size: 13px
+      font-size: 1.3rem
       margin-bottom: 9px
     &__phone
       +ff-bold
-      font-size: 20px
+      font-size: 2rem
       text-decoration: none
       color: $text-color
     &__btn
       width: 170px
+      &-phone
+        +ico-phone($primary-color)    
+        background: 
+          image: url('../img/feedback/phone-receiver_yellow.png')   
+        display: none
+        &:hover
+          box-shadow: 1px 1px 1px 0 darken($primary-color, 15%)
+
     

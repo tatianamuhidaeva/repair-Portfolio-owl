@@ -3,14 +3,16 @@
 @import 'mixins'
 @import 'fonts'
 @import 'interface'
-@import 'feedback'
 
+html
+  font-size: $base-text-size
 *, *::before, *::after
   box-sizing: border-box
 body
   font-family: 'Museo Sans Medium', sans-serif
   background-color: #fff
   color: $text-color
+  overflow-x: hidden
 .container
   max-width: 1170px
   margin: 0 auto
@@ -22,3 +24,6 @@ img
 
 @import 'header'
 @import 'main'
+@import 'feedback'
+
+@import 'media'

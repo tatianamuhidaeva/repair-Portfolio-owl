@@ -1,0 +1,73 @@
+$lg: 1232px
+$md: 992px
+$sm: 768px
+$xs: 660px
+$xxs: 450px
+
+@media (max-width: $lg)
+  .container
+    width: 95%
+@media (max-width: $sm)
+  .main
+    &-wrap
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 50px 20px
+    &__title
+      margin-bottom: 40px
+    &-img
+      display: none
+    &-text
+      text-align: center
+      max-width: $sm
+    &-advantages
+      margin: 0 auto
+      text-align: left
+  .feedback
+    padding: 50px 20px
+  .form
+    max-width: $sm
+    text-align: center
+    &::after
+      display: none
+    &-info
+      margin: 0 auto
+      text-align: left
+@media (max-width: $xs)  
+  .hidden-xs
+    display: none
+  .visible-xs
+    display: block
+  .form    
+    &__input
+      display: block
+      &:first-child
+        margin-right: auto     
+      margin-right: auto
+      margin-left: auto
+    &__btn
+      width: $xs - 300px
+      width: 270px
+      font-size: 1.4rem
+    &-info    
+      width: 270px
+      margin-right: auto
+      margin-left: auto  
+      &__text       
+        width: 270px
+        margin-right: 0px
+        text-align: center
+        font-size: 1.2rem
+@media (max-width: $xxs)  
+  .hidden-xxs
+    display: none
+  html
+    font-size: $base-text-size * 0.9
+  .header
+    &-logo 
+      width: 40%
+      img
+        object-fit: contain
+      &__phone
+        font-size: 1.4rem
