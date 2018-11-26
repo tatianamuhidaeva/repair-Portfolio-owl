@@ -1,0 +1,83 @@
+.main
+  background: $bg-light-color
+  // overflow-x: hidden
+  // overflow-y: visible
+  &-wrap
+    display: flex
+    // justify-content: space-around
+    // grid-template-areas: 'main-text main-img'
+    // grid-template-columns: 600px 1fr
+    padding: 80px 0
+  &-text
+    // grid-area: main-text
+    // position: relative
+    // overflow: visible
+   
+    // max-width: 600px
+    flex-basis: 50%
+    // &::after
+    //   content: ""
+    //   position: absolute
+    //   top: 0;
+    //   left: 600px
+    //   height: 630px
+    //   width: 736px
+    //   background:
+    //     repeat: no-repeat
+    //     image: url('../img/main/main-img.png')
+    //     size: 736px 630px    
+    //   z-index: 1
+  &__title
+    +ff-bold
+    font-size: 4.1rem
+    line-height: 1.3em
+    margin-bottom: 53px
+  &__subtitle
+    display: block
+    font-size: 2rem
+    margin-top: 25px
+  &-advantages
+    display: flex
+    flex-direction: column
+    max-width: 310px
+    &__item
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 25px
+    &__img
+      min-width: 36px
+      height: 36px
+      border-radius: 50%
+      border: 2px solid $primary-color
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 20px
+      margin-right: 30px
+      &-1
+        background-image: url('../img/main/clock-circular-outline.png')
+      &-2
+        background-image: url('../img/main/calculator.png')
+      &-3
+        background-image: url('../img/main/paint-board-and-brush.png')
+    &__text
+      +ff-light
+      font-size: 1.4rem
+      line-height: 1.7em
+  &-img
+    flex-basis: 50%
+    // position: relative
+    // grid-area: main-img
+    // width: 500px
+    // height: 630px
+    // transform-origin: 0 0
+    // $scale-x: 736 / 500
+    // $scale-y: 630 / 400
+    // transform: scaleY($scale-y)
+    
+    // z-index: 1
+    &__img
+      
+      // object-fit: cover
+
+    

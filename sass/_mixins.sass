@@ -1,0 +1,21 @@
+=ff-light
+  font-family: 'Museo Sans Light' , sans-serif
+=ff-medium
+  font-family: 'Museo Sans Medium' , sans-serif
+=ff-bold
+  font-family: 'Museo Sans Bold' , sans-serif
+=ico-phone($color)
+  display: block
+  width: 40px
+  height: 40px
+  border: 2px solid $color
+  border-radius: 50%
+  background:
+    repeat: no-repeat
+    image: url('../img/feedback/phone-receiver.png')
+    // size: 15px 15px
+    position: 50% 50%
+  &:hover
+    box-shadow: 1px 1px 1px 0 darken($color, 15%)
+  &:active
+    box-shadow: -1px -1px 1px 0 darken($color, 15%)

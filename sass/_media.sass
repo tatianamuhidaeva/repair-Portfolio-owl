@@ -1,0 +1,110 @@
+$lg: 1232px
+$md: 992px
+$sm: 768px
+$xs: 660px
+$xxs: 450px
+
+@media (max-width: $lg)
+  .container
+    width: 95%
+@media (max-width: $md)
+  .main
+    &__title
+      font-size: 3rem
+    &__subtitle
+      font-size: 1.5rem
+
+@media (max-width: $sm)
+  .main
+    &-wrap
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 50px 20px
+    &-text
+      text-align: center
+      // max-width: $sm
+      max-width: 450px
+    &__title
+      margin-bottom: 40px
+    &-advantages
+      margin: 0 auto
+      text-align: left
+    &-img
+      max-width: 450px
+    //   display: none
+  .feedback
+    padding: 50px 20px
+  .form
+    max-width: $sm
+    text-align: center
+    &__title
+      font-size: 2.2rem
+      line-height: 30px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 1.3rem
+      margin-bottom: 35px
+    &::after
+      display: none
+    &-info
+      margin: 0 auto
+      text-align: left
+@media (max-width: $xs)  
+  .hidden-xs
+    display: none
+  .visible-xs
+    display: block
+  .form    
+    &__title
+      // margin-bottom: 20px
+    &__input
+      display: block
+      &:first-child
+        margin-right: auto     
+      margin-right: auto
+      margin-left: auto
+    &__btn
+      width: $xs - 300px
+      width: 270px
+      font-size: 1.4rem
+    &-info    
+      width: 270px
+      margin-right: auto
+      margin-left: auto  
+      &__text       
+        width: 270px
+        margin-right: 0px
+        text-align: center
+        font-size: 1.2rem
+@media (max-width: $xxs)  
+  .hidden-xxs
+    display: none
+  html
+    // font-size: $base-text-size * 0.8
+  .header
+    &-text
+      &__contacts
+        margin-right: 5px
+      &__phone
+        font-size: 1.4rem
+    &-logo 
+      width: 40%
+      img
+        object-fit: contain
+  .main
+    &__title
+      font-size: 2.5rem
+      // margin-bottom: 10px
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 1.2rem
+      margin-top: 10px        
+  .form
+    &__title
+      font-size: 2rem
+      // line-height: 30px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 1.2rem
+      margin-bottom: 25px

@@ -1,0 +1,31 @@
+.header
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 7px 0
+  &-text
+    display: flex
+    align-items: center
+    &__contacts
+      text-align: right
+      margin-right: 30px
+    &__city    
+      display: block  
+      +ff-light
+      font-size: 1.3rem
+      margin-bottom: 9px
+    &__phone
+      +ff-bold
+      font-size: 2rem
+      text-decoration: none
+      color: $text-color
+    &__btn
+      width: 170px
+      &-phone
+        +ico-phone($primary-color)    
+        background: 
+          image: url('../img/feedback/phone-receiver_yellow.png')   
+        display: none
+    
