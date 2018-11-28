@@ -1,76 +1,76 @@
 .feedback
   padding: 94px 0
   overflow: hidden
-.form
-  // display: flex
-  // flex-direction: column
-  // justify-content: center
-  align-items: center
-  max-width: 574px
-  position: relative
-  overflow: visible
-  &__title
-    +ff-bold
-    font-size: 2.4rem
-    line-height: 35px
-    margin-bottom: 44px
-  &__subtitle
-    display: inline-block
-    +ff-light
-    font-size: 1.6rem
-    margin-bottom: 49px
-  &__input
-    width: 270px
-    margin-bottom: 30px
-    margin-left: 4px
-    &:first-child
-      margin-right: 22px
-  &__btn
-    width: 570px
-    height: 70px
-    font-size: 1.6rem
-    margin-bottom: 25px
-    margin-left: 4px
-  &::after
-    content: ""
-    display: block
-    position: absolute
-    top: -94px
-    right: -130px - 845px
-    width: 845px
-    height: 595px
-    background:
-      repeat: no-repeat
-      image: url('../img/feedback/form-img.jpg')
-      size: 845px 595px
-  &-info
-    width: 559px
-    display: flex
-    justify-content: space-between
+  &-form
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
     align-items: center
-    flex-wrap: wrap
-    +ff-light
-    font-size: 1.5rem
-    line-height: 24px
-    margin-left: 4px
-    &__text
-      width: 225px
-      text-align: left
-      margin-right: 70px
-    &__contact
-      width: 195px
-      position: relative
-      vertical-align: middle
-      &::before
-        content: ""
-        position: absolute
-        top: 7px
-        left: -62px
-        +ico-phone(#ccc)
-    &__phone
+    max-width: 574px
+    position: relative
+    overflow: visible
+    &__title
       +ff-bold
-      color: $text-color
-      text-decoration: none
+      font-size: 2.4rem
+      line-height: 35px
+      margin-bottom: 44px
+    &__subtitle
+      display: inline-block
+      +ff-light
+      font-size: 1.6rem
+      margin-bottom: 49px
+    &__input
+      width: 270px
+      margin-bottom: 30px
+      margin-left: 4px
+      &:first-child
+        margin-right: 22px
+    &__btn
+      width: 570px
+      height: 70px
+      font-size: 1.6rem
+      margin-bottom: 25px
+      margin-left: 4px
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      top: -94px
+      right: -130px - 845px
+      width: 845px
+      height: 595px
+      background:
+        repeat: no-repeat
+        image: url('../img/feedback/form-img.jpg')
+        size: 845px 595px
+    &-info
+      width: 559px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      +ff-light
+      font-size: 1.5rem
+      line-height: 24px
+      margin-left: 4px
+      &__text
+        width: 225px
+        text-align: left
+        margin-right: 70px
+      &__contact
+        width: 195px
+        position: relative
+        vertical-align: middle
+        &::before
+          content: ""
+          position: absolute
+          top: 7px
+          left: -62px
+          +ico-phone(#ccc)
+      &__phone
+        +ff-bold
+        color: $text-color
+        text-decoration: none
 
       
 

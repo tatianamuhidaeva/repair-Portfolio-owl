@@ -8,11 +8,72 @@ $xxs: 450px
   .container
     width: 95%
 @media (max-width: $md)
+  .hidden-md
+    display: none
+  .visible-inline-md
+    display: inline
   .main
     &__title
       font-size: 3rem
     &__subtitle
       font-size: 1.5rem
+  .modal
+    &-dialog
+      grid-template-areas: 'modal-form' 'modal-info' 
+      grid-template-columns: 1fr
+    &-form-wrap
+      padding: 20px
+      
+    &-form
+      &__title
+        font-size: 19px
+        line-height: 25px
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 15px
+      &__input[type="text"]
+        height: 50px
+      &__input[type="tel"]
+        height: 50px
+      &__input
+        margin-bottom: 7px
+      &__btn
+        height: 50px
+        margin-bottom: 10px
+      &-info
+        &__phone
+          display: inline
+          // margin-top: 5px
+          a
+            font-size: 16px
+    &-info
+      padding: 10px 30px
+    &-cards
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
+      // margin: 0 10px
+      &__item
+        width: 140px
+        margin-right: 4px
+        &:last-of-type
+          margin-right: 0
+      &__title
+        font-size: 14px
+        &::after
+          height: 1px
+          margin-top: 5px
+          margin-bottom: 5px
+      &__paragraph
+        font-size: 12px
+    &-tooltip
+      position: fixed
+      top: 0
+      left: 0
+      border: 1px solid #333333
+      background-color: #ffffff
+      padding: 5px
 
 @media (max-width: $sm)
   .main
@@ -35,27 +96,27 @@ $xxs: 450px
     //   display: none
   .feedback
     padding: 50px 20px
-  .form
-    max-width: $sm
-    text-align: center
-    &__title
-      font-size: 2.2rem
-      line-height: 30px
-      margin-bottom: 25px
-    &__subtitle
-      font-size: 1.3rem
-      margin-bottom: 35px
-    &::after
-      display: none
-    &-info
-      margin: 0 auto
-      text-align: left
+    &-form
+      max-width: $sm
+      text-align: center
+      &__title
+        font-size: 2.2rem
+        line-height: 30px
+        margin-bottom: 25px
+      &__subtitle
+        font-size: 1.3rem
+        margin-bottom: 35px
+      &::after
+        display: none
+      &-info
+        margin: 0 auto
+        text-align: left
 @media (max-width: $xs)  
   .hidden-xs
     display: none
   .visible-xs
     display: block
-  .form    
+  .feedback-form    
     &__title
       // margin-bottom: 20px
     &__input
@@ -100,7 +161,7 @@ $xxs: 450px
     &__subtitle
       font-size: 1.2rem
       margin-top: 10px        
-  .form
+  .feedback-form
     &__title
       font-size: 2rem
       // line-height: 30px
