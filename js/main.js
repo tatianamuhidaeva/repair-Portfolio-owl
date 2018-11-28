@@ -49,7 +49,7 @@ $(document).ready(function () {
         "left": 0
       });
   });
-  $(".modal-cards__about").on('pointermove', function (eventObject) {
+  $(".modal-cards__about").on('touchstart', function (eventObject) {
     $(".modal-tooltip").show()
       .css({
         "top": eventObject.pageY - 250,
@@ -57,7 +57,7 @@ $(document).ready(function () {
       })
       .show();
 
-  }).pointerout(function () {
+  }).touchend(function () {
 
     $(".modal-tooltip").hide()
       .css({
