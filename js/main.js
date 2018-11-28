@@ -20,44 +20,64 @@ btnModalClose.addEventListener('click', function(){
 });
 */
 
-$(document).ready(function(){
-  $('#btn-callback-1').on('click',function(){
+$(document).ready(function () {
+  $('#btn-callback-1').on('click', function () {
     $('.modal').toggleClass('flex');
   });
-  $('#btn-callback-2').on('click',function(){
+  $('#btn-callback-2').on('click', function () {
     $('.modal').toggleClass('flex');
   });
-  $('.modal__close').on('click',function(){
+  $('.modal__close').on('click', function () {
     $('.modal').toggleClass('flex');
   });
-  
-  $(".modal").click(function(event){
 
-  console.log("x = " + event.pageX);
-  console.log("y = " + event.pageY);
-});
-  $(".modal-cards-about").mousemove(function (eventObject) {
+
+  $(".modal-cards__about").on('mousemove', function (eventObject) {
 
     // $data_tooltip = $(this).attr("data-tooltip");
     console.log('mousemove');
     console.log(eventObject.pageX);
 
     $(".modal-tooltip").show()
-                      .css({ 
-                        "top" : eventObject.pageY - 250,                        
-                        "left": eventObject.pageX - 100
+      .css({
+        "top": eventObject.pageY - 250,
+        "left": eventObject.pageX - 100
 
-                    //  "bottom" : eventObject.pageY + 5,
-                    // "left" : eventObject.pageX + 5                    
-                 })
-                 .show();
+        //  "bottom" : eventObject.pageY + 5,
+        // "left" : eventObject.pageX + 5                    
+      })
+      .show();
 
-}).mouseout(function () {
+  }).mouseout(function () {
 
     $(".modal-tooltip").hide()
-                 .css({
-                     "top" : 0,
-                    "left" : 0
-                 });
-});
+      .css({
+        "top": 0,
+        "left": 0
+      });
+  });
+  $(".modal-cards__about").on('click', function (eventObject) {
+
+    // $data_tooltip = $(this).attr("data-tooltip");
+    console.log('mousemove');
+    console.log(eventObject.pageX);
+
+    $(".modal-tooltip").show()
+      .css({
+        "top": eventObject.pageY - 250,
+        "left": eventObject.pageX - 100
+
+        //  "bottom" : eventObject.pageY + 5,
+        // "left" : eventObject.pageX + 5                    
+      })
+      .show();
+
+  }).mouseout(function () {
+
+    $(".modal-tooltip").hide()
+      .css({
+        "top": 0,
+        "left": 0
+      });
+  });
 });
