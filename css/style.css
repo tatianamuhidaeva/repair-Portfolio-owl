@@ -846,10 +846,6 @@ img {
   font-family: 'Museo Sans Bold' , sans-serif;
 }
 
-.modal-cards__about:hover {
-  cursor: pointer;
-}
-
 .modal-form-wrap {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -924,13 +920,66 @@ img {
   .container {
     width: 95%;
   }
+  .modal-dialog {
+    width: 90%;
+  }
+  .modal-form-wrap {
+    padding: 40px;
+  }
+  .modal-info {
+    padding: 40px;
+  }
+  .modal-info__item {
+    font-size: 16px;
+  }
+  .modal-cards {
+    margin-bottom: 20px;
+  }
+  .modal-cards__item {
+    margin-bottom: 7px;
+  }
+  .modal-cards__img {
+    width: 100px;
+  }
+  .modal-cards__title {
+    font-size: 14px;
+  }
+  .modal-cards__title::after {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .modal-cards__paragraph {
+    font-size: 14px;
+  }
+  .modal-form__title {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .modal-form__subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .modal-form__input[type="text"] {
+    height: 60px;
+  }
+  .modal-form__input[type="tel"] {
+    height: 60px;
+  }
+  .modal-form__input {
+    margin-bottom: 15px;
+  }
+  .modal-form__btn {
+    height: 60px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 992px) {
   .hidden-md {
     display: none;
   }
-  .visible-inline-md {
+  .visible-inline-mdf {
     display: inline;
   }
   .main__title {

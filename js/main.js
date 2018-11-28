@@ -31,8 +31,8 @@ $(document).ready(function () {
     $('.modal').toggleClass('flex');
   });
 
-
-  $(".modal-cards__about").on('mousemove', function (eventObject) {
+/* Всплывающая подсказка в модальном окне */
+/*   $(".modal-cards__about").on('mousemove', function (eventObject) {
 
     $(".modal-tooltip").show()
       .css({
@@ -64,5 +64,5 @@ $(document).ready(function () {
         "top": 0,
         "left": 0
       });
-  });
+  }); */
 });

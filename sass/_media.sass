@@ -7,10 +7,49 @@ $xxs: 450px
 @media (max-width: $lg)
   .container
     width: 95%
+  .modal
+    &-dialog
+      width: 90%        
+    &-form-wrap
+      padding: 40px  
+    &-info
+      padding: 40px
+      &__item
+        font-size: 16px
+    &-cards
+      margin-bottom: 20px
+      &__item
+        margin-bottom: 7px
+      &__img
+        width: 100px
+      &__title
+        font-size: 14px
+        &::after
+          margin-top: 7px
+          margin-bottom: 7px
+      &__paragraph        
+        font-size: 14px        
+    &-form
+      &__title
+        font-size: 21px
+        line-height: 24px
+        margin-bottom: 20px
+      &__subtitle
+        font-size: 15px
+        margin-bottom: 20px
+      &__input[type="text"]
+        height: 60px
+      &__input[type="tel"]
+        height: 60px
+      &__input
+        margin-bottom: 15px
+      &__btn
+        height: 60px
+        margin-bottom: 15px     
 @media (max-width: $md)
   .hidden-md
     display: none
-  .visible-inline-md
+  .visible-inline-mdf
     display: inline
   .main
     &__title
@@ -21,9 +60,9 @@ $xxs: 450px
     &-dialog
       grid-template-areas: 'modal-form' 'modal-info' 
       grid-template-columns: 1fr
+      // margin: 20px
     &-form-wrap
-      padding: 20px
-      
+      padding: 20px      
     &-form
       &__title
         font-size: 19px
