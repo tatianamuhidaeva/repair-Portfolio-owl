@@ -1002,6 +1002,7 @@ img {
     height: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100%;
   }
   .modal-cards__paragraph {
     font-size: 12px;
