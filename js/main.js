@@ -34,17 +34,10 @@ $(document).ready(function () {
 
   $(".modal-cards__about").on('mousemove', function (eventObject) {
 
-    // $data_tooltip = $(this).attr("data-tooltip");
-    console.log('mousemove');
-    console.log(eventObject.pageX);
-
     $(".modal-tooltip").show()
       .css({
         "top": eventObject.pageY - 250,
-        "left": eventObject.pageX - 100
-
-        //  "bottom" : eventObject.pageY + 5,
-        // "left" : eventObject.pageX + 5                    
+        "left": eventObject.pageX - 100       
       })
       .show();
 
@@ -56,23 +49,15 @@ $(document).ready(function () {
         "left": 0
       });
   });
-  $(".modal-cards__about").on('click', function (eventObject) {
-
-    // $data_tooltip = $(this).attr("data-tooltip");
-    console.log('mousemove');
-    console.log(eventObject.pageX);
-
+  $(".modal-cards__about").on('pointermove', function (eventObject) {
     $(".modal-tooltip").show()
       .css({
         "top": eventObject.pageY - 250,
-        "left": eventObject.pageX - 100
-
-        //  "bottom" : eventObject.pageY + 5,
-        // "left" : eventObject.pageX + 5                    
+        "left": eventObject.pageX - 100      
       })
       .show();
 
-  }).mouseout(function () {
+  }).pointerout(function () {
 
     $(".modal-tooltip").hide()
       .css({
