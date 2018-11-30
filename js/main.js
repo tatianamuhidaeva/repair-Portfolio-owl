@@ -113,18 +113,18 @@ $(document).ready(function () {
     responsive:{
         0:{
             items:1,
-            mouseDrag: true,
-            touchDrag: true
+            mouseDrag: false
+            // touchDrag: true
         },
         768:{
             items:2,
-            mouseDrag: false,
-            touchDrag: false
+            mouseDrag: false
+            // touchDrag: false
         },
         992:{
             items:3,
-            mouseDrag: false,
-            touchDrag: false
+            mouseDrag: false
+            // touchDrag: false
         }
     }
 })
