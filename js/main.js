@@ -69,28 +69,57 @@ $(document).ready(function () {
     $('.modal').toggleClass('flex');
   });
 
-  /* Portfolio Slick. Слайдер в блоке Портфолио */
-  $('.portfolio-slider').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // centerMode: true,
-    prevArrow: '<div class="arrow arrow-prev"></div>',
-    nextArrow: '<div class="arrow arrow-next"></div>',
-    responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
+  /* Слайдер в блоке Портфолио */
+  // $('.portfolio-slider').slick({
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   swipe: false,
+  //   // centerMode: true,
+  //   prevArrow: '<div class="arrow arrow-prev"></div>',
+  //   nextArrow: '<div class="arrow arrow-next"></div>',
+  //   responsive: [{
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         swipe: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 660,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,          
+  //         swipe: true
+  //       }
+  //     }
+  //   ]
+  // });
+
+
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    // margin:10,
+    nav: true,
+    navElement: '<div class="arrow"></div>',
+  //   nextArrow: '<div class="arrow arrow-next"></div>',
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:3
         }
-      },
-      {
-        breakpoint: 660,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
+    }
+})
 });
