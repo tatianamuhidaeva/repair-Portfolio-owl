@@ -21,13 +21,18 @@
   &__title
     margin-bottom: 92px
   &-slider
+    z-index: 100
+
+
+    
     right: -29px
     text-align: center
     margin: 0 auto
     &__item
       margin-right: 29px
       
-
+.owl-nav
+  color: transparent
 .arrow
   position: absolute
   bottom: -87px
@@ -35,12 +40,15 @@
   width: 45px  
   height: 19px
   cursor: pointer
-  &-prev
+  span
+    display: none
+  &.owl-prev
     transform: translateX(-45px)
     margin-left: -29px
     background: url('../img/arrow-left.png') no-repeat center
     background-size: 100%
-  &-next
+  &.owl-next
     transform: translateX(1px)
     background: url('../img/arrow-right.png') no-repeat center
     background-size: 100%
+    
