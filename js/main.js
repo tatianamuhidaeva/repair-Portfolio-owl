@@ -115,10 +115,14 @@ $(document).ready(function () {
             items:1
         },
         768:{
-            items:2
+            items:2,
+            mouseDrag: false,
+            touchDrag: false
         },
         992:{
-            items:3
+            items:3,
+            mouseDrag: false,
+            touchDrag: false
         }
     }
 })
