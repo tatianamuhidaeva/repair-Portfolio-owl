@@ -20,17 +20,6 @@ btnModalClose.addEventListener('click', function(){
 });
 */
 
-$(document).ready(function () {
-  $('#btn-callback-1').on('click', function () {
-    $('.modal').toggleClass('flex');
-  });
-  $('#btn-callback-2').on('click', function () {
-    $('.modal').toggleClass('flex');
-  });
-  $('.modal__close').on('click', function () {
-    $('.modal').toggleClass('flex');
-  });
-
 /* Всплывающая подсказка в модальном окне */
 /*   $(".modal-cards__about").on('mousemove', function (eventObject) {
 
@@ -65,4 +54,43 @@ $(document).ready(function () {
         "left": 0
       });
   }); */
+
+
+$(document).ready(function () {
+
+  /* Вызов модального окна */
+  $('#btn-callback-1').on('click', function () {
+    $('.modal').toggleClass('flex');
+  });
+  $('#btn-callback-2').on('click', function () {
+    $('.modal').toggleClass('flex');
+  });
+  $('.modal__close').on('click', function () {
+    $('.modal').toggleClass('flex');
+  });
+
+  /* Portfolio Slick. Слайдер в блоке Портфолио */
+  $('.portfolio-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    // centerMode: true,
+    prevArrow: '<div class="arrow arrow-prev"></div>',
+    nextArrow: '<div class="arrow arrow-next"></div>',
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 });

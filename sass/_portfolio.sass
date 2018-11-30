@@ -1,0 +1,46 @@
+
+.portfolio
+  padding: 90px 0 185px
+  text-align: center
+  background-color: $bg-light-color
+  z-index: 1
+  .container
+    position: relative
+    z-index: 1
+    &::before
+      content: ""
+      position: absolute
+      top: -90px
+      left: -142px
+      width: 845px
+      height: 735px
+      background:
+        repeat: repeat
+        image: url('../img/portfolio/portfolio-bg.png')
+      z-index: -1
+  &__title
+    margin-bottom: 92px
+  &-slider
+    right: -29px
+    text-align: center
+    margin: 0 auto
+    &__item
+      margin-right: 29px
+      
+
+.arrow
+  position: absolute
+  bottom: -87px
+  left: 50%
+  width: 45px  
+  height: 19px
+  cursor: pointer
+  &-prev
+    transform: translateX(-45px)
+    margin-left: -29px
+    background: url('../img/arrow-left.png') no-repeat center
+    background-size: 100%
+  &-next
+    transform: translateX(1px)
+    background: url('../img/arrow-right.png') no-repeat center
+    background-size: 100%
